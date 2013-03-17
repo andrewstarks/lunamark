@@ -1,5 +1,35 @@
 # Lunamark
 
+
+## Andrew's Note:
+
+I'm forking Lunamark so that I can add a note block syntax, which would 
+provide for arbitrarily styled block quotes.
+
+In Latex, this create an environment of that name (which will lead to 
+error, if not defined) or will lead to a verbatimvenvironment (default 
+behavior), depending on the arguments envoked options.
+
+In HTML, it will result in a `<div class= "label_name">`, which will allow 
+awesome styling.
+
+Example:
+````markdown
+  Note:
+    Tabbed text is is in the note. In html, this is <div class= "Note">...
+    More tabbed text
+    
+    Still in the note.
+    
+  Out of the note.
+````
+
+In the future, I'll add `Note:[label]`, or not.
+
+Now, to the original readme...
+
+-------------------
+
 Lunamark is a lua library and command-line program for conversion of markdown
 to other textual formats. Currently HTML, [dzslides] (HTML5 slides),
 Docbook, ConTeXt, LaTeX, and Groff man are the supported output formats, but
